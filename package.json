@@ -4,10 +4,10 @@
   "description": "Simple HTTP service. Post a Max patch, get back some simple statistics about it.",
   "main": "index.js",
   "scripts": {
-	"prestart": "tsc",
-	"pretest": "tsc",
-	"start": "node dist/server.js",
-	"test": "mocha test/test.js"
+    "prestart": "tsc",
+    "pretest": "tsc",
+    "start": "node dist/server.js",
+    "test": "mocha test/test.js"
   },
   "author": "",
   "license": "ISC",
