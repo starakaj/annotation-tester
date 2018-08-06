@@ -1,0 +1,16 @@
+<<<<<<< HEAD
+const histo = require("histo");
+=======
+// @flow
+
+const histo = require("../histo/index.js");
+>>>>>>> Everything working with flow
+
+import type { Patch } from "../types";
+
+module.exports = {
+	count: (patchJSON: Patch) => {
+		const analysis = histo.countBoxes(patchJSON.patcher.boxes);
+		return analysis;
+	}
+}
