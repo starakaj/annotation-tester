@@ -6,7 +6,7 @@ describe("loading express", function () {
 	let server;
 
 	beforeEach(function () {
-		const serverPath = "../lib/server.js";
+		const serverPath = "../dist/server.js";
 		delete require.cache[require.resolve(serverPath)];
 		server = require(serverPath);
 	});
