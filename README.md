@@ -49,3 +49,15 @@ node node_modules/.bin/flow init
 - Add `"flow.pathToFlow": "${workspaceRoot}/node_modules/.bin/flow"`
 - Should create (if it doesn't already exist) a file at `.vscode/settings.json`
 - You may need to restart VSCode
+7. Install flow-typed globally
+
+```
+npm install -g flow-typed
+```
+8. Install types for any third-party libraries that you want
+
+```
+flow-typed install express
+```
+
+Flow-typed is smart enough to know what version you need based on your package.json
