@@ -1,0 +1,11 @@
+{
+  "name": "histo",
+  "version": "1.0.0",
+  "description": "Pseudo 3rd party package, just imagine this did something more complex than count a bunch of boxes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cycling '74",
+  "license": "MIT"
+}
