@@ -1,9 +1,9 @@
-const express = require('express');
+import express from "express";
 const router = express.Router();
-const multer  = require('multer');
+import multer from "multer";
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
-const histo = require("../controllers/histo.js");
+import * as histo from "../controllers/histo"
 
 router.get("/", (req, res) => {
 	res.send("Upload a max patch to /histo to get patch statistics");
@@ -28,4 +28,4 @@ router.post("/histo",  upload.single("patch"), (req, res) => {
 	}
 });
 
-module.exports = router;
+export default router
