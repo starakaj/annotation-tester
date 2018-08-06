@@ -1,9 +1,5 @@
-// @flow
-
-import type { Box } from "../types"
-
 module.exports = {
-	countBoxes: (boxList: [{box: Box}]) => {
+	countBoxes: (boxList) => {
 		const boxCount = {};
 		boxList.forEach((box) => {
 			let maxclass = box.box.maxclass;
