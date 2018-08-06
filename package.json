@@ -4,10 +4,10 @@
   "description": "Simple HTTP service. Post a Max patch, get back some simple statistics about it.",
   "main": "index.js",
   "scripts": {
-	"build": "babel lib/ -d dist/",
-	"flow": "flow",
-	"prestart": "npm run build",
-	"pretest": "npm run build",
+    "build": "babel lib/ -d dist/",
+    "flow": "flow",
+    "prestart": "npm run build",
+    "pretest": "npm run build",
     "start": "node dist/server.js",
     "test": "mocha test/test.js"
   },
