@@ -4,5 +4,5 @@ declare module "histo" {
 		text: string
 	}
 
-	export function countBoxes(boxes: [{box: Box}]): number
+	export function countBoxes(boxes: [{box: Box}]): {[key: string]: number}
 }
